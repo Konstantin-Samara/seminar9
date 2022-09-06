@@ -8,11 +8,11 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 if (m<=n) {
-PrintNumbers(m,n);
-Console.WriteLine();
-void PrintNumbers(int m, int n) {
-    if (m>n) {return;}
-    else {
-        Console.Write($"{m} ");m++;
-        PrintNumbers(m,n); }}}
+    PrintNumbers(m,n);
+    Console.WriteLine();
+    void PrintNumbers(int m, int n) {
+        if (m>n) {return;}
+        else {
+            Console.Write($"{m++} ");
+            PrintNumbers(m,n); }}}
 else {Console.WriteLine("Введен неправильный интервал");}
